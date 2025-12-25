@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>چت</title>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="header">
+      <button id="back-btn">صفحه اصلی</button>
+      <h2 id="chat-user">نام مخاطب</h2>
+      <button id="profile-btn">پروفایل</button>
+    </div>
+    <div class="messages" id="messages"></div>
+    <div class="message-input">
+      <input type="text" id="msg-text" placeholder="پیام خود را بنویسید">
+      <input type="file" id="msg-image" accept="image/*">
+      <button id="send-btn">ارسال</button>
+    </div>
+    <button id="delete-all">حذف همه پیام‌ها</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
