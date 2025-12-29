@@ -2,26 +2,17 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>تراز بنایی</title>
+  <title>آناتومی بدن انسان</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="level-box">
-  <h2>📐 تراز ساختمانی</h2>
+<div id="info">روی بدن کلیک کن</div>
+<canvas id="scene"></canvas>
 
-  <div class="circle">
-    <div class="line" id="line"></div>
-  </div>
-
-  <div class="info">
-    <p>زاویه: <span id="deg">0</span>°</p>
-    <p>شیب: <span id="percent">0</span>%</p>
-  </div>
-
-  <input type="range" min="-10" max="10" step="0.1"
-         value="0" oninput="setAngle(this.value)">
-</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
 
 <script src="script.js"></script>
 </body>
